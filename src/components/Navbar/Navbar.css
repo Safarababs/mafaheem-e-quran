@@ -1,0 +1,64 @@
+/* Navbar.scss */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: relative; /* Add position relative for stacking context */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-list li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth background color transition */
+  z-index: 1; /* Add a z-index value */
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #555;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  z-index: 2; /* Add a z-index value */
+}
+
+.dropdown-item {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Add a smooth background color transition */
+}
+
+.nav-item:hover {
+  background-color: #444; /* Change background color on hover */
+  z-index: 3; /* Add a higher z-index value */
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+  z-index: 4; /* Add a higher z-index value */
+}
+
+.dropdown-item:hover {
+  background-color: #777; /* Change background color of dropdown items on hover */
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mafaheem {
+  background-color: rgb(195, 216, 204);
+  .content-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjust alignment as needed */
+    padding: 20px; /* Add padding around the container */
+  }
+
+  .content-box {
+    width: 300mm; /* Set the width to 210mm (A4 width) */
+    height: auto; /* Set the height to 297mm (A4 height) */
+    margin: 20px; /* Add margin between content boxes */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow to each content box */
+    border-radius: 5px; /* Add rounded corners */
+    overflow: hidden; /* Hide overflowing content if necessary */
+    position: relative;
+
+    &:hover {
+      transform: scale(1.05);
+      padding: 1rem;
+      margin: 25px;
+      border: solid 1px black;
+    }
+  }
+
+  /* Define styles for the images inside content-box */
+  .content-box img {
+    width: 100%; /* Make the images responsive within their containers */
+    height: 100%; /* Make the images take up the full height of the container */
+    display: block; /* Remove extra spacing below inline images */
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  /* Media query for smaller screens (e.g., tablets and mobile devices) */
+  @media (max-width: 768px) {
+    /* Show only one image at a time */
+    .content-box {
+      width: 100%; /* Set the width to 100% to occupy the full screen width */
+    }
+  }
+
+  /* Modal styles */
+  .overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000; /* Ensure it appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .close {
+    position: absolute;
+    top: 1rem; /* Position at the top */
+    left: 1rem; /* Position at the left */
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+    padding: 5px; /* Add some padding for better clickability */
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Add a background color to the button */
+    border-radius: 0 5px 0 0; /* Add rounded corners to the top-left */
+  }
+
+  .modal-content {
+    max-width: 210mm; /* Set the maximum width to 210mm (A4 width) */
+    max-height: 297mm; /* Set the maximum height to 297mm (A4 height) */
+    margin: 1rem auto; /* Center the image horizontally */
+    display: block;
+  }
+}
+
+
+/* FirstBook.scss */
+.home {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(25% - 20px); /* Adjust the width as needed */
+  min-width: 200px; /* Minimum width for responsiveness */
+  transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05); /* Scale up the box on hover */
+}
+
+.box a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+
