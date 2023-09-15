@@ -4,7 +4,7 @@
 }
 
 .mafaheem {
-  background-color: rgb(195, 216, 204);
+  background: linear-gradient(135deg, #3498db, #85C1E9, #1ABC9C);
   .content-container {
     display: flex;
     align-items: center;
@@ -99,9 +99,10 @@
 
 /* FirstBook.scss */
 .home {
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #3498db, #85C1E9, #1ABC9C);
   padding: 20px;
   text-align: center;
+  height: 100vh;
 }
 
 h1 {

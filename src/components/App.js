@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Navbar/Navbar';
+import Contact from './contact/contact';
 // Home page
 import Home from './Home/Home';
 // First book 
@@ -40,6 +41,7 @@ const App = () => {
       <Navbar />
       <Routes>
       <Route path='/' exact element={<Home />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
       {/* first Book */}
       <Route path="/firstbook" element={<FirstBook />}></Route>
       <Route path="/LessonOne" element={<LessonOne />}></Route>
