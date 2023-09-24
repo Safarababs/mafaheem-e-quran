@@ -39,9 +39,7 @@
   transform: scale(1);
 }
 @media (max-width: 768px) {
-  .mafaheem {
-    /* Show only one image at a time */
-  }
+  
   .mafaheem .content-box {
     width: 100%;
   }
@@ -49,7 +47,7 @@
 
 /* FirstBook.scss */
 .home {
-  background: linear-gradient(135deg, #3498db, #85c1e9, #1abc9c);
+  background: linear-gradient(135deg, #1abc9c, #3498db, #85c1e9);
   padding: 20px;
   text-align: center;
   height: 100vh;
