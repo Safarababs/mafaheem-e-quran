@@ -4,10 +4,9 @@
 }
 
 .mafaheem {
-  background: linear-gradient(135deg, #3498db, #85C1E9, #1ABC9C);
+  background: linear-gradient(135deg, #3498db, #85c1e9, #1abc9c);
   /* Define styles for the images inside content-box */
   /* Media query for smaller screens (e.g., tablets and mobile devices) */
-  /* Modal styles */
 }
 .mafaheem .content-container {
   display: flex;
@@ -44,55 +43,23 @@
     /* Show only one image at a time */
   }
   .mafaheem .content-box {
-    width: 100%; /* Set the width to 100% to occupy the full screen width */
+    width: 100%;
   }
-}
-.mafaheem .overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 1000; /* Ensure it appears above other content */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mafaheem .modal {
-  position: relative;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-.mafaheem .close {
-  position: absolute;
-  top: 1rem; /* Position at the top */
-  left: 1rem; /* Position at the left */
-  font-size: 25px;
-  color: red;
-  cursor: pointer;
-  padding: 5px; /* Add some padding for better clickability */
-  background-color: rgba(0, 0, 0, 0.5); /* Add a background color to the button */
-  border-radius: 0 5px 0 0; /* Add rounded corners to the top-left */
-}
-.mafaheem .modal-content {
-  max-width: 210mm; /* Set the maximum width to 210mm (A4 width) */
-  max-height: 297mm; /* Set the maximum height to 297mm (A4 height) */
-  margin: 1rem auto; /* Center the image horizontally */
-  display: block;
 }
 
 /* FirstBook.scss */
 .home {
-  background: linear-gradient(135deg, #3498db, #85C1E9, #1ABC9C);
+  background: linear-gradient(135deg, #3498db, #85c1e9, #1abc9c);
   padding: 20px;
   text-align: center;
   height: 100vh;
 }
 
+@media (max-width: 768px) {
+  .home {
+    height: auto;
+  }
+}
 h1 {
   font-size: 28px;
   margin-bottom: 20px;
