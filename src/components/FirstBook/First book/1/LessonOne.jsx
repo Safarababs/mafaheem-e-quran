@@ -12,7 +12,7 @@ import content10 from "./IMG_0010.jpg";
 import content11 from "./IMG_0011.jpg";
 import content12 from "./IMG_0012.jpg";
 
-const LessonOne = () => {
+const Lesson17 = () => {
   const Content = [
     {
       id: 1,
@@ -125,4 +125,4 @@ const LessonOne = () => {
   );
 };
 
-export default LessonOne;
+export default Lesson17;

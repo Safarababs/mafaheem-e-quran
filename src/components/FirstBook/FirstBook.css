@@ -39,7 +39,9 @@
   transform: scale(1);
 }
 @media (max-width: 768px) {
-  
+  .mafaheem {
+    /* Show only one image at a time */
+  }
   .mafaheem .content-box {
     width: 100%;
   }
