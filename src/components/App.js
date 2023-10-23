@@ -26,6 +26,22 @@ import LessonSixteen from "./FirstBook/First book/16/LessonSixteen";
 import FirstBookLectures from "./FirstBook/FirstBookLecture/FirstBookLectures";
 // Second Book
 import SecondBook from "./SecondBook/SecondBook";
+import Lesson17 from "./SecondBook/Second/Lesson17";
+import Lesson18 from "./SecondBook/Second/Lesson18";
+import Lesson19 from "./SecondBook/Second/Lesson19";
+import Lesson20 from "./SecondBook/Second/Lesson20";
+import Lesson21 from "./SecondBook/Second/Lesson21";
+import Lesson22 from "./SecondBook/Second/Lesson22";
+import Lesson23 from "./SecondBook/Second/Lesson23";
+import Lesson24 from "./SecondBook/Second/Lesson24";
+import Lesson25 from "./SecondBook/Second/Lesson25";
+import Lesson26 from "./SecondBook/Second/Lesson26";
+import Lesson27 from "./SecondBook/Second/Lesson27";
+import Lesson28 from "./SecondBook/Second/Lesson28";
+import Lesson29 from "./SecondBook/Second/Lesson29";
+import Lesson30 from "./SecondBook/Second/Lesson30";
+import Lesson31 from "./SecondBook/Second/Lesson31";
+import Lesson32 from "./SecondBook/Second/Lesson32";
 // Second Book lectures
 import SecondBookLEctures from "./SecondBook/SecondBookLectures/SecondBookLEctures";
 // third Book
@@ -82,6 +98,22 @@ const App = () => {
           ></Route>
           {/* Second book */}
           <Route path="/secondbook" element={<SecondBook />}></Route>
+          <Route path="/Lesson17" element={<Lesson17 />}></Route>
+          <Route path="/Lesson18" element={<Lesson18 />}></Route>
+          <Route path="/Lesson19" element={<Lesson19 />}></Route>
+          <Route path="/Lesson20" element={<Lesson20 />}></Route>
+          <Route path="/Lesson21" element={<Lesson21 />}></Route>
+          <Route path="/Lesson22" element={<Lesson22 />}></Route>
+          <Route path="/Lesson23" element={<Lesson23 />}></Route>
+          <Route path="/Lesson24" element={<Lesson24 />}></Route>
+          <Route path="/Lesson25" element={<Lesson25 />}></Route>
+          <Route path="/Lesson26" element={<Lesson26 />}></Route>
+          <Route path="/Lesson27" element={<Lesson27 />}></Route>
+          <Route path="/Lesson28" element={<Lesson28 />}></Route>
+          <Route path="/Lesson29" element={<Lesson29 />}></Route>
+          <Route path="/Lesson30" element={<Lesson30 />}></Route>
+          <Route path="/Lesson31" element={<Lesson31 />}></Route>
+          <Route path="/Lesson32" element={<Lesson32 />}></Route>
           {/* Second Book lectures */}
           <Route
             path="/secondbooklectures"
