@@ -4,7 +4,7 @@ import content2 from "./IMG_0002.jpg";
 import content3 from "./IMG_0003.jpg";
 import content4 from "./IMG_0004.jpg";
 import content5 from "./IMG_0005.jpg";
-import content6 from "./IMG_0006.jpg";
+import content6 from "./IMG_0006.png";
 import content7 from "./IMG_0007.jpg";
 import content8 from "./IMG_0008.jpg";
 import content9 from "./IMG_0009.jpg";
