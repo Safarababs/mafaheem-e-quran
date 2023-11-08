@@ -54,6 +54,10 @@ const FirstBook = () => {
         <div className="box">
           <a href="LessonSixteen">Lesson 16</a>
         </div>
+        <div className="box">
+          <a href="WordMeaning1">Word Meaning index</a>
+        </div>
+        
       </div>
     </section>
   );

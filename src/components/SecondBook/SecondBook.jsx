@@ -55,6 +55,9 @@ const SecondBook = () => {
         <div className="box">
           <a href="Lesson32">Lesson 16</a>
         </div>
+        <div className="box">
+          <a href="wordMeaning">Word Meaning Index</a>
+        </div>
       </div>
     </section>
   );

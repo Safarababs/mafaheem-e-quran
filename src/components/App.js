@@ -22,6 +22,7 @@ import LessonThirteen from "./FirstBook/First book/13/LessonThirteen";
 import LessonFourteen from "./FirstBook/First book/14/LessonFourteen";
 import LessonFifteen from "./FirstBook/First book/15/LessonFifteen";
 import LessonSixteen from "./FirstBook/First book/16/LessonSixteen";
+import WordMeaning1 from "./FirstBook/First book/WordMeaning1";
 // First book lectures
 import FirstBookLectures from "./FirstBook/FirstBookLecture/FirstBookLectures";
 // Second Book
@@ -42,6 +43,7 @@ import Lesson29 from "./SecondBook/Second/Lesson29";
 import Lesson30 from "./SecondBook/Second/Lesson30";
 import Lesson31 from "./SecondBook/Second/Lesson31";
 import Lesson32 from "./SecondBook/Second/Lesson32";
+import WordMeaning from "./SecondBook/Second/WordMeaning";
 // Second Book lectures
 import SecondBookLEctures from "./SecondBook/SecondBookLectures/SecondBookLEctures";
 // third Book
@@ -62,6 +64,7 @@ import Lesson45 from "./ThirdBook/ThirdBook/13/Lesson45";
 import Lesson46 from "./ThirdBook/ThirdBook/14/Lesson46";
 import Lesson47 from "./ThirdBook/ThirdBook/15/Lesson47";
 import Lesson48 from "./ThirdBook/ThirdBook/16/Lesson48";
+import WordMeaning3 from "./ThirdBook/ThirdBook/book 3 meaning only/WordMeaning3";
 // Third book lectures
 import ThirdBookLectures from "./ThirdBook/ThirdBookLectures/ThirdBookLectures";
 
@@ -91,6 +94,7 @@ const App = () => {
           <Route path="/LessonFourteen" element={<LessonFourteen />}></Route>
           <Route path="/LessonFifteen" element={<LessonFifteen />}></Route>
           <Route path="/LessonSixteen" element={<LessonSixteen />}></Route>
+          <Route path="/WordMeaning1" element={<WordMeaning1 />}></Route>
           {/* First Book lectures */}
           <Route
             path="/firstbooklectures"
@@ -114,6 +118,8 @@ const App = () => {
           <Route path="/Lesson30" element={<Lesson30 />}></Route>
           <Route path="/Lesson31" element={<Lesson31 />}></Route>
           <Route path="/Lesson32" element={<Lesson32 />}></Route>
+          <Route path="/wordMeaning" element={<WordMeaning />}></Route>
+          
           {/* Second Book lectures */}
           <Route
             path="/secondbooklectures"
@@ -137,6 +143,7 @@ const App = () => {
           <Route path="/Lesson46" element={<Lesson46 />}></Route>
           <Route path="/Lesson47" element={<Lesson47 />}></Route>
           <Route path="/Lesson48" element={<Lesson48 />}></Route>
+          <Route path="/WordMeaning3" element={<WordMeaning3 />}></Route>
           {/* Third book lectures */}
           <Route
             path="/thirdbooklectures"
