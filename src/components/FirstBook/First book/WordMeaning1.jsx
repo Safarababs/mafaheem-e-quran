@@ -1,5 +1,6 @@
-
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import content1 from "./first book meaning/IMG_0001.jpg";
 import content2 from "./first book meaning/IMG_0002.jpg";
 import content3 from "./first book meaning/IMG_0003.jpg";
@@ -99,12 +100,16 @@ const WordMeaning1 = () => {
       <div className="content-container">
         {Content.map((content, index) => (
           <div key={content.id} className="content-box">
-            <img src={content.contentSrc} alt={content.title} loading="lazy" />
+            <LazyLoadImage
+              src={content.contentSrc}
+              alt={content.title}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
     </section>
-  )
+  );
 };
 
 export default WordMeaning1;

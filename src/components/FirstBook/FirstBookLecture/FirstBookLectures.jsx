@@ -2,6 +2,7 @@ import React from "react";
 import "./FirstBookLecture.css";
 
 const FirstBookLectures = () => {
+  
   const Lectures = [
     {
       id: 1,

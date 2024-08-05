@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import content1 from "./Second Book/IMG_0238.jpg";
 import content2 from "./Second Book/IMG_0239.jpg";
 import content3 from "./Second Book/IMG_0240.jpg";
@@ -14,11 +16,6 @@ import content13 from "./Second Book/IMG_0249.jpg";
 import content14 from "./Second Book/IMG_0250.jpg";
 import content15 from "./Second Book/IMG_0251.jpg";
 import content16 from "./Second Book/IMG_0252.jpg";
-
-
-
-
-
 
 const Lesson32 = () => {
   const Content = [
@@ -141,7 +138,7 @@ const Lesson32 = () => {
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    }
+    },
   ];
 
   return (
@@ -149,7 +146,11 @@ const Lesson32 = () => {
       <div className="content-container">
         {Content.map((content, index) => (
           <div key={content.id} className="content-box">
-            <img src={content.contentSrc} alt={content.title} loading="lazy" />
+            <LazyLoadImage
+              src={content.contentSrc}
+              alt={content.title}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>

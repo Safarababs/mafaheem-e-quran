@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import content1 from "./Second Book/IMG_0001.jpg";
 import content2 from "./Second Book/IMG_0002.jpg";
 import content3 from "./Second Book/IMG_0003.jpg";
@@ -17,7 +19,6 @@ import content15 from "./Second Book/IMG_0015.jpg";
 import content16 from "./Second Book/IMG_0016.jpg";
 import content17 from "./Second Book/IMG_0017.jpg";
 import content18 from "./Second Book/IMG_0018.jpg";
-
 
 const Lesson17 = () => {
   const Content = [
@@ -116,42 +117,48 @@ const Lesson17 = () => {
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 13,
       contentSrc: content13,
       alt: "content 1",
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 14,
       contentSrc: content14,
       alt: "content 1",
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 15,
       contentSrc: content15,
       alt: "content 1",
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 16,
       contentSrc: content16,
       alt: "content 1",
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 17,
       contentSrc: content17,
       alt: "content 1",
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 18,
       contentSrc: content18,
       alt: "content 1",
@@ -166,7 +173,11 @@ const Lesson17 = () => {
       <div className="content-container">
         {Content.map((content, index) => (
           <div key={content.id} className="content-box">
-            <img src={content.contentSrc} alt={content.title} loading="lazy" />
+            <LazyLoadImage
+              src={content.contentSrc}
+              alt={content.title}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>

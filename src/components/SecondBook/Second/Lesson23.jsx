@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import content1 from "./Second Book/IMG_0090.jpg";
 import content2 from "./Second Book/IMG_0091.jpg";
 import content3 from "./Second Book/IMG_0092.jpg";
@@ -13,8 +15,6 @@ import content12 from "./Second Book/IMG_0100.jpg";
 import content13 from "./Second Book/IMG_0101.jpg";
 import content14 from "./Second Book/IMG_0102.jpg";
 import content15 from "./Second Book/IMG_0103.jpg";
-
-
 
 const Lesson23 = () => {
   const Content = [
@@ -105,28 +105,31 @@ const Lesson23 = () => {
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 13,
       contentSrc: content13,
       alt: "content 1",
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 14,
       contentSrc: content14,
       alt: "content 1",
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    },{
+    },
+    {
       id: 15,
       contentSrc: content15,
       alt: "content 1",
       title: "tafseer-e-quran",
       details:
         "Molana sajjad hussain naqvi give lecture of tafseer-e-quran. classes are held on google meet from iran",
-    }
+    },
   ];
 
   return (
@@ -134,7 +137,11 @@ const Lesson23 = () => {
       <div className="content-container">
         {Content.map((content, index) => (
           <div key={content.id} className="content-box">
-            <img src={content.contentSrc} alt={content.title} loading="lazy" />
+            <LazyLoadImage
+              src={content.contentSrc}
+              alt={content.title}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
